@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	<div>
+	<span>*</span><span> - Denotes required information</span><br><br>
+
+	<h4>> 1 Donation   > 2 Conformation   > 3 thank you</h4>
+</div>
+
+<div>
+	<form>
+		<div class="text_color"><h2>Doner Information</h2></div>
+		<div class="margin_left_100">
+			<div class="label_text"><label for="fname" >First name<span class="text_color">*</span></label></div>
+	  		<div class="input_margib"><input type="text" id="fname" name="fname" ><br></div>
+
+	  		<div class="label_text"><label for="Lname"class="label">Last name<span class="text_color">*</span></label></div>
+	  		<div class="input_margib"><input type="text" id="Lname" name="fname"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="company">company</label></div>
+	  		<div class="input_margib"><input type="text" id="companyname" name="companyname"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="Adress1">Adress1<span class="text_color">*</span></label></div>
+	  		<div class="input_margib"><input type="text" id="Adress1" name="Adress1"class="margin"><br></div>
+
+
+	  		<div class="label_text"><label for="Adress2">Adress2<span class="text_color">*</span></label></div>
+	  		<div class="input_margib"><input type="text" id="Adress2" name="Adress2"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="city">City<span class="text_color">*</span></label></div>
+	  		<div class="input_margib"><input type="text" id="City" name="City"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="state">State<span class="text_color">*</span></label></div>
+	  		<div class="input_margib">
+	  			 <input list="States" name="State" id="State">
+				  <datalist id="States">
+				    <option value="Dhaka">
+				    <option value="Sylhet">
+				    <option value="Barishal">
+				    <option value="Cox-bazar">
+				    <option value="chitagon">
+				  </datalist>
+			</div>
+
+			<div class="label_text"><label for="ZIP Code">ZIP code<span class="text_color">*</span></label></div>
+	  		<div class="input_margib"><input type="text" id="Zip" name="Zip_code"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="Country">Country<span class="text_color">*</span></label></div>
+	  		<div class="input_margib">
+	  			<input list="countrsys" name="countrsy" id="countrsy">
+	  			<datalist id="countrsys">
+			    <option value="Bangladesh">
+			    <option value="India">
+			    <option value="USA">
+			    <option value="UK">
+			  </datalist><br></div>
+
+			<div class="label_text"><label for="Phone">Phone</label></div>
+	  		<div class="input_margib"><input type="number" id="Phone" name="Phone"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="Fax">Fax</label></div>
+	  		<div class="input_margib"><input type="number" id="Fax" name="Fax"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="Email">Email<span class="text_color">*</span></label></div>
+	  		<div class="input_margib"><input type="text" id="Email" name="Email"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="Email" class="">Donation Amount<span>*</span></label></div>
+	  		<div class="input_margib">
+	  			<input type="radio" name="Nonoe"><label>None</label> 
+	  			<input type="radio" name="Nonoe"><label>$50</label>
+	  			<input type="radio" name="Nonoe"><label>$75</label> 
+	  			<input type="radio" name="Nonoe"><label>$100</label>  
+	  			<input type="radio" name="Nonoe"><label>$250</label>
+	  			<input type="radio" name="Nonoe"><label>Other</label>  
+	  		</div>
+
+
+	  		<div><h5>(chack a button or type in your amount)</h5></div>
+
+	  		<div class="label_text"><label for="amount">Other amount<span class="margin_left">$</span></label></div>
+	  		<div class="input_margib"><input type="text" id="Email" name="amount"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="amount" class="">Recurring Donation</label>
+	  			<span>(check if yes)</span>
+	  		</div>
+	  		<div class="input_margib"><input type="checkbox" name="Nonoe"><label class="margin_left">I'm interested in giving on a regular basis.</label></div><br>
+	  		
+	  		<div class="Monthly_payment">
+	  			<div class="label_text2"><label for="Email">Mothly credit card $</label></div>
+	  			<input type="number" id="Email" name="Email"class="margin input_margib input_margin2">
+	  			<span>For</span>
+				<input type="number" id="Email" name="Email"class="margin  input_margin2">
+	  			<span>Months</span>
+	  		</div>
+  		</div>
+
+  		<!-- SECOND PART -->
+
+  		<div class="text_color"><h2>Honorarium And Memorial Donastion Information</h2></div>
+  		<div  class="margin_left_100">
+  			
+  			<div class="label_text2"><label for="amount" class="">I would like to make this donation</label></div>
+  			<div class="input_margib">
+  				<input type="radio" name="Nonoe" class=""><label>To honor</label><br> 
+	  			<input type="radio" name="Nonoe" class=""><label>In memory of</label><br>
+	  		</div>
+
+
+
+	  		<div class="label_text"><label for="Name">Name</label></div>
+	  		<div class="input_margib"><input type="text" id="Name" name="Name"class="margin"><br></div>
+
+	  		<div class="Acknowledge_donation_to"><p for="Adress1" class="">Acknowledge donation to</p></div>
+	  		<div class="input_margib"><input type="text" id="Adress1" name="Adress1"class="margin"><br></div>
+
+
+	  		<div class="label_text"><label for="Adress">Adress</label></div>
+	  		<div class="input_margib"><input type="text" id="Adress" name="Adress"class="margin"><br></div>
+
+	  		<div class="label_text"><label for="city">City</label></div>
+	  		<div class="input_margib"><input type="text" id="City" name="City"class="margin"><br></div>
+
+
+	  		<div class="label_text"><label for="state">State</label></div>
+	  		<div class="input_margib"><input list="state" name="state" value="Select State" class="margin">
+			  <datalist id="state">
+			    <option value="Dhaka">
+			    <option value="Sylhet">
+			    <option value="Barishal">
+			    <option value="Cox-bazar">
+			  </datalist><br></div>
+
+	  		<div class="label_text"><label for="ZIP Code">ZIP</label></div>
+	  		<div class="input_margib"><input type="text" id="Zip" name="Zip_code"class="margin"><br></div>
+
+  		</div>
+
+  		<!-- THIRD PART -->
+
+  		<div class="text_color"><h2>Additinal Information</h2></div>
+  		<p>Please enter your name, company or organization as it you like it appers on publication</p>
+  		<div class="margin_left_100">
+  			<div class="label_text"><label for="Name">Name</label></div>
+	  		<div class="input_margib"><input type="text" id="Name" name="Name"class="margin"></div><br>
+  		</div>
+
+  		<div><input type="checkbox" name="Nonoe"><label class="margin_left">I would like my gift to remain anonymous.</label></div>
+  		<div><input type="checkbox" name="Nonoe"><label class="margin_left">My employe offers a matching gift pogram.</label></div>
+  		<div><input type="checkbox" name="Nonoe"><label class="margin_left">Please save the cost of ackonloging this gify by not mailing.</label></div><br>
+
+  		<div class="margin_left_100">
+  			<div class="label_text"><label for="city">Comment</label><br><span>(please type any quastion or feedback here)</span></div>
+	  		<div class="input_margib"><textarea name="message" rows="5" cols="30">
+	  			
+	  		</textarea></div>
+  		</div>
+
+  		<div class="margin_left_100">
+  			<div class="label_text"><label for="amount" class="">How may we contact you?</label>
+	  		</div>
+	  		<div class="input_margib"><input type="checkbox" name="Nonoe">Email</div>
+	  		<div class="input_margib"><input type="checkbox" name="Nonoe">post mail</div>
+	  		<div class="input_margib"><input type="checkbox" name="Nonoe">Telephone</div>
+	  		<div class="input_margib"><input type="checkbox" name="Nonoe">Fax</div>
+  		</div>
+  		<p>I would like to reseve newsletter and informatino about special event by:</p>
+  		<div class="margin_left_100">
+	  		<div class="input_margib"><input type="checkbox" name="Nonoe">Email</div>
+	  		<div class="input_margib"><input type="checkbox" name="Nonoe">post mail</div>
+  		</div>
+	  		<div class=""><input type="checkbox" name="Nonoe">I would like to reseve newsletter and informatino </div><br>
+
+	  		<div class="margin_left_100">
+	  			<button class="button_reset">Reset</button>
+	  			<button class="button_continue">Continue</button>
+	  		</div><br>
+	  		<div>
+		<img src="image\1.png" alt="Flowers in Chania" width="20" height="20"><span class="margin_left">Donate online with confidence you ar in secure server.</span><br>
+		<span>If you hae any quastion or problem plase contact..</span></div>
+	</form>
+</div>
+
+
+
+
+
+</body>
+</html>

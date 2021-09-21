@@ -1,0 +1,65 @@
+.margin_left_100
+{
+	margin-left: 0px ;
+}
+.label_text
+{
+	width: 260px;
+	height: 00px;
+	margin-top: 10px;
+	text-align: right;
+	
+}
+.label_text2
+{
+	width: 260px;
+	height: 00px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.input_margib
+{
+
+	margin-left: 280px;
+}
+.input_margin2
+{
+
+	width: 50px;
+}
+.text_color
+{
+	color: red;
+}
+.margin_left
+{
+	
+	margin-left: 10px;
+}
+.Monthly_payment
+{
+	margin-left: 130px;
+}
+.Acknowledge_donation_to
+{
+	width: 260px;
+	height: 00px;
+
+	text-align: right;
+	
+}
+
+.button_reset
+{
+
+	margin-left: 150px;
+	border-radius: 15px;
+	width: 70px;
+}
+.button_continue
+{
+	margin-left: 10px;
+	border-radius: 15px;
+	width: 70px;
+}
