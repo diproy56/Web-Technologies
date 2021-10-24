@@ -19,7 +19,7 @@
 	  } 
 	  else 
 	  {
-	    $name = test_input($_POST["name"]);
+	    $name = ($_POST["name"]);
 	  
 	    if (!preg_match("/^[a-zA-Z-' ]*$/",$name) ) 
 	    {
@@ -37,11 +37,11 @@
 	  } 
 	  else 
 	  {
-	    $email = test_input($_POST["email"]);
+	    $email = ($_POST["email"]);
 	   
 	    if (!filter_var($email, FILTER_VALIDATE_EMAIL))
 	     {
-	      $emailErr = "Invalid email format";
+	      $emailerr = "Invalid email format";
 	     }
 	  }
 
@@ -51,7 +51,7 @@
 		  } 
 		  else 
 		  {
-		    $dob = test_input($_POST["dob"]);
+		    $dob = ($_POST["dob"]);
 		  }
 
 	  if (empty($_POST["gender"])) 
@@ -83,7 +83,7 @@
 	  }
 	   else
 	    {
-	    $blood_group = test_input($_POST["blood_group"]);
+	    $blood_group = ($_POST["blood_group"]);
 	    }
 
 	}
