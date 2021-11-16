@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input, label {
+  display: block;
+}
+	</style>
+	<script type="text/javascript">
+		function validateForm() {
+    var fname = document.forms["contactForm"]["fname"].value;
+    var sname = document.forms["contactForm"]["sname"].value;
+    var validate = document.forms["contactForm"]["validate"].value;
+
+    if (fname == null || fname == "") {
+        alert("Forename must be filled out");
+        return false;
+    } else if (sname == null || sname == "") {
+        alert("Surname must be filled out");
+        return false;
+    } else if (validate != 6) {
+        alert("You're either a spammer or can't add");
+        return false;
+    }
+}
+	</script>
+</head>
+<body>
+<form name="contactForm" action="" onsubmit="return validateForm()" method="post">
+  
+  <label for="fname">Forename:</label> 
+  <input type="text" name="fname" id="fname">
+  <label for="sname">Surname:</label> 
+  <input type="text" name="sname" id="sname">
+   <label for="validate">What is 5 + 1?:</label> 
+  <input type="text" name="validate" id="validate">
+  <label for="">Query</label>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <input type="submit" value="Submit">
+  
+</form>
+</body>
+</html>

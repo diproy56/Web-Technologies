@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="css/login_Style.css">
-</head>
-<body>
 
 <?php 
 session_start();
@@ -14,10 +7,15 @@ else
   {require 'head/top.php';}
   require 'controller/check Login.php';
 ?>
- 
-		
 
-	
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/login_Style.css">
+</head>
+<body>
+
     <form class="wraper" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
 
 		<div class="header">
@@ -48,7 +46,7 @@ else
      <a href="forget password.php" class="forget_password">Forget password?</a>
 		</div>
 </form>
-</form>
+</div>
 <?php require 'fotter/Footer.php';?>
 </body>
 </html>

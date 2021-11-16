@@ -8,7 +8,7 @@
 <div class="left_name">
 	<span style="margin: auto;">XShop</span>
 </div>	
-<div class="left">
+<div class="background_colour">
 </div>	
 <div class="right">
 	<a style="text-decoration: none;" href="Public.php">Home</a>

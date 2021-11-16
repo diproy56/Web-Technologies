@@ -123,17 +123,6 @@
 	padding: auto;
 	border-radius: 5px;
 	margin-top: 20px;
-	background-color: #93f5c1;
-
-}
-.background_colour
-{
-
-	background-color: #27F2C5;
-}
-.submit_button:hover
-{
-	background-color:#34ebab;
 }
 input::placeholder 
 {  

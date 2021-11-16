@@ -8,23 +8,29 @@
 	
 	text-align: center;
 	background-color: white;
-	width: 200px;
-	height: 50px;
+
+
 	margin: auto;
 	padding: auto;
-	transform: translateY(30px);
+	transform: translateY(10px);
 
 
 }
-
+.header_text
+{
+	font-size: 30px;
+	font-weight: bold;
+}
 .reg_box
 {
 	width: 35%;
-	height:530px;
+	height:535px;
 	border: 2px solid black;
 	margin: auto;
 	padding: auto;
-	margin-top: px;
+	transform: scale(0.95);
+	margin-bottom: 50px;
+
 }
 
 .error
@@ -90,7 +96,7 @@
 }
 .wraper
 {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 .label
 {
@@ -123,7 +129,8 @@
 	padding: auto;
 	border-radius: 5px;
 	margin-top: 20px;
-	background-color: #93f5c1;
+	background:#1376D5;
+	color: white;
 
 }
 .background_colour
@@ -133,7 +140,7 @@
 }
 .submit_button:hover
 {
-	background-color:#34ebab;
+	background-color:#025AC3;
 }
 input::placeholder 
 {  
