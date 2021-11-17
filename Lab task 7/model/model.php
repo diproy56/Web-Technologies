@@ -96,6 +96,21 @@ function updatePassword($user_name, $data){
     $conn = null;
     return true;
 }
+function updateProduct($id, $data){
+    $conn = db_conn();
+    $selectQuery = "UPDATE `book` set `book_name` = ?, `author_name` = ?, `book_price` = ? where `ID` = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([
+            $data['book_name'], $data['author_name'], $data['book_price'], $id
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    
+    $conn = null;
+    return true;
+}
 function deleteProduct($id){
     $conn = db_conn();
     $selectQuery = "DELETE FROM `user` WHERE `ID` = ?";
@@ -109,7 +124,19 @@ function deleteProduct($id){
 
     return true;
 }
+function showProduct($id){
+    $conn = db_conn();
+    $selectQuery = "SELECT * FROM `book` where ID = ?";
+    try {
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([$id]);
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    return $row;
+}
 function showuser($user_name){
 	$conn = db_conn();
 	$selectQuery = "SELECT * FROM `user` where user_name = ?";

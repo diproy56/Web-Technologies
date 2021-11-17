@@ -6,6 +6,14 @@
             border: 1px solid black;
             
         }
+        .wraper
+        {
+            width: 50%;
+    margin: auto;
+    padding: auto;
+    margin-top: 150px;
+    transform: scale(1.2);
+        }
 
   </style>
 </head>
@@ -28,7 +36,7 @@ if (!isset($_POST['name']))
 }
 ?>
 
-<form >
+<form class="wraper" >
 <table style="border: 1px solid black ;margin: auto;">
       
   <tr style="background-color:gray; color: white; ">
@@ -36,11 +44,13 @@ if (!isset($_POST['name']))
     <th>Book Name</th>
     <th>Author Nmae</th>
     <th>Book Price</th>
+    <th colspan="2">Action</th>
 
    
   </tr>
  <?php 
         foreach ($useres as $i => $usere): 
+
         
         ?>
 <tr>
@@ -48,13 +58,19 @@ if (!isset($_POST['name']))
     <td><?php echo $usere['book_name'] ?></td>
     <td><?php echo $usere['author_name'] ?></td>
     <td><?php echo $usere['book_price'] ?></td>
+    <td><a href="editProduct.php? id=<?php echo $usere['ID'] ?>">Edit</a></td>
+    <td><a href="deleteProduct.php? id=<?php echo $usere['ID'] ?>">Delete</a></td>
 
     
   </tr>
  <?php  endforeach; ?>
     
 </table>
-<a style="margin: auto; text-decoration: none;" href="addbook.php">Add Book</a>
+<div style="text-decoration: none; margin: auto;width: 11%;height: 24px;
+background: #1376D5;;border-radius: 5px; margin-top:10px ">
+  <a style=" text-decoration: none;color: white; margin-top: 5px;" href="addbook.php">Add Book</a>
+</div>
+
 </form>
 <?php require 'fotter/Footer.php';?>
 </body>
