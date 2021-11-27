@@ -2,7 +2,7 @@
 
 	session_start();
 
-		if (isset($_SESSION['User_name']))
+		if (isset($_SESSION['user_name']))
 		  {
 		    header("location:Login.php");
 		  }
@@ -18,7 +18,9 @@ require 'controller/store_data.php';
 <head>
 	<title>From</title>
 	<link rel="stylesheet" type="text/css" href="css/registration_style.css">
-	<script src="JS/registration.js"></script>
+<script src="JS/name_password.js"></script>
+<script src="JS/email.js"></script>
+<script src="JS/sign_up.js"></script>
 </head>
 <body>
 
@@ -30,35 +32,37 @@ require 'controller/store_data.php';
 		<form method="post"  action="<?php echo $_SERVER['PHP_SELF']; ?>">
 			<div class="wraper">
 				<div class="first_inputs">
-		<div class="content1" >
-			<input type="text" id="name" name="name" class="input" placeholder="Enter Your Name" value="<?php echo $name;?>" onkeyup="checkName()" onblur="checkName()" onclick="checkName()"><span id="nameerr" class="error"> <?php echo $nameerr;?></span><br>
+		<div class="content1">
+			 <input type="text" placeholder="Enter your name" class="input" id="name" name="name" onkeyup="checkName()" onblur="checkName()" onclick="checkName()">
+  <br><span class="error" id="namEerr"> <?php echo $nameerr;?></span><hr>
+
 			
 		</div>
 
 		
 		<div class="content1">
 			<input type="text" id="email" name="email" placeholder="Enter Your Email" class="input" value="<?php echo $email;?>" onkeyup="checkEmail()" onblur="checkEmail()" onclick="checkEmail()">
-		<span class="error" id="emailerr">
+		<br><span class="error" id="emailErr">
 	 		<?php echo $emailerr;?>
 	 	</span><br>
 		</div>
 
 		<div class="content1">
-			<input type="text" placeholder="Enter User Name" id="user_name" name="user_name" class="input" onkeyup="checkUserName()" onblur="checkUserName()" onclick="checkUsername()">
-				<span class="error" id="Usernameerr"><?php echo $Usernameerr;?></span>
+			<input type="text" class="input" id="user_name" name="user_name" placeholder="Enter User Name" onkeyup="checkUser()" onblur="checkUser()" onclick="checkUser()">
+				<br><span class="error" id="Usernameerr"><?php echo $Usernameerr;?></span>
 			</div>
 			<hr class="hr_tag">
 			</div>
 
 			<div class="second_inputs">
 			<div class="content">
-			<input type="password" placeholder="Enter Password" id="password" name="password" class="input" onkeyup="checkPassword()" onblur="checkPassword()" onclick="checkPassword()">
-				<span class="error" id="passworderr"><?php echo $passworderr;?></span>
+			<input type="password" placeholder="Enter Password" id="password" name="password"  onkeyup="checkPassword()" onblur="checkPassword()" onclick="checkPassword()" class="input">
+				<br><span class="error" id="passwordErr"><?php echo $passworderr;?></span>
 			</div>
 			
 			<div class="content">
 				<input type="password" class="input" placeholder="Confirm Password" id="rpassword" name="rpassword" onkeyup="checkRetypeNewPassword()" onblur="checkRetypeNewPassword()" onclick="checkRetypeNewPassword()">
-				<span class="error" id="rpassworderr"><?php echo $rpassworderr;?></span>
+				<br><span class="error" id="rpassworderr"><?php echo $rpassworderr;?></span>
 			</div>
 			<hr class="hr_tag">
 		</div>
@@ -77,7 +81,7 @@ require 'controller/store_data.php';
 		<div class="content">
 			<label class="label">Date Of Birth</label><br>
 			 <input type="date" id="dob" name="dob" class="input_dob" value="<?php echo $dob;?>" onkeyup="checkdob()" onblur="checkdob()" onclick="checkdob()">
-      <span class="error" id="doberr" ><?php echo $doberr;?></span><br>
+      <br><span class="error" id="doberr" ><?php echo $doberr;?></span><br>
 		</div>
 
 

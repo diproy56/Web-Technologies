@@ -3,7 +3,7 @@
 require_once '../model/model.php';
 if (deleteProduct($_GET['id']))
 {
-    header('Location: ../displayProduct.php');
+    header('Location: ../Book information.php');
 }
 
  ?>
